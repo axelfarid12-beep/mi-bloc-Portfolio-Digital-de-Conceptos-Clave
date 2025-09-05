@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistemas Embebidos</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Roboto', sans-serif; background:#f5f5f5; color:#333; line-height:1.6; }
+a { text-decoration:none; color:inherit; }
+
+header { background:linear-gradient(to right,#0f2027,#203a43,#2c5364); color:#fff; padding:2rem; text-align:center; }
+header h1 { font-size:2.5rem; margin-bottom:0.5rem; }
+header p { font-size:1.2rem; }
+
+nav { display:flex; justify-content:center; flex-wrap:wrap; background:#203a43; }
+nav a { padding:1rem 1.2rem; color:#fff; transition:background 0.3s; font-size:0.9rem; }
+nav a:hover { background:#2c5364; }
+
+section { padding:3rem 10%; display:none; opacity:0; transition:opacity 0.5s; }
+section.active { display:block; opacity:1; }
+h2 { color:#0f2027; margin-bottom:1rem; }
+p, li { margin-bottom:0.8rem; }
+ul { margin-left:1.5rem; }
+
+button { background:#0f2027; color:#fff; padding:0.5rem 1rem; border:none; border-radius:5px; cursor:pointer; transition:background 0.3s; }
+button:hover { background:#2c5364; }
+
+table { width:100%; border-collapse:collapse; margin-bottom:2rem; }
+th, td { border:1px solid #ccc; padding:0.5rem; text-align:left; }
+th { background:#203a43; color:#fff; }
+
+footer { text-align:center; padding:2rem; background:#203a43; color:#fff; margin-top:2rem; }
+
+.fade-in { animation:fadeIn 0.5s ease forwards; }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Sistemas Embebidos</h1>
+<p>Explora microcontroladores, sensores y la gestión de datos en dispositivos modernos</p>
+</header>
+
+<nav>
+<a href="#" data-target="inicio">🏠</a>
+<a href="#" data-target="sistemas">Sistemas Embebidos</a>
+<a href="#" data-target="plataformas">Características de las Plataformas</a>
+<a href="#" data-target="identificacion">Identificación de Elementos</a>
+<a href="#" data-target="micro">Microcontroladores</a>
+<a href="#" data-target="sensores">Sensores</a>
+<a href="#" data-target="conceptos">Conceptos</a>
+<a href="#" data-target="conectividad">Conectividad</a>
+<a href="#" data-target="transmision">Proceso de Transmisión</a>
+<a href="#" data-target="gestion">Gestión de Datos</a>
+</nav>
+
+<!-- Inicio -->
+<section id="inicio" class="active fade-in">
+<h1>SISTEMAS EMBEBIDOS</h1>
+<p><strong>04.09.2025</strong></p>
+<h2>BIENVENIDO</h2>
+<p>¡Hola y bienvenidos! 🌟</p>
+<p>Este espacio está diseñado para explorar el fascinante mundo de los sistemas embebidos, microcontroladores, sensores y todo lo relacionado con la captura, transmisión y gestión de datos.</p>
+<ul>
+<li>Conceptos básicos de sistemas embebidos</li>
+<li>Plataformas y componentes</li>
+<li>Microcontroladores y microprocesadores</li>
+<li>Sensores y conectividad</li>
+<li>Transmisión y gestión de datos</li>
+</ul>
+<div style="text-align:right; margin-top:2rem;">
+<button onclick="goToSection('sistemas')">Siguiente ➡️</button>
+</div>
+</section>
+
+<!-- 1. Sistemas Embebidos -->
+
+<!-- 1. Sistemas Embebidos -->
+<section id="sistemas" class="fade-in">
+  <h2>1. Sistemas Embebidos</h2>
+  <p>
+    Se trata de sistemas informáticos diseñados para gestionar dispositivos determinados. 
+    Su arquitectura está optimizada para ejecutar funciones específicas con alta eficiencia 
+    y baja latencia ante estímulos externos. Actualmente, su aplicación se extiende a múltiples 
+    sectores, desde la electrónica de consumo hasta la industria automotriz.
+  </p>
+
+  <h3>¿Qué son los Sistemas Embebidos?</h3>
+  <p>
+    Un sistema embebido es una unidad de computación especializada diseñada para cumplir 
+    una función específica dentro de un dispositivo mayor. Su hardware y software están 
+    optimizados para eficiencia energética y rendimiento, con capacidad de respuesta en 
+    tiempo real frente a estímulos externos. Normalmente se encuentran integrados en el 
+    hardware principal, operando de manera discreta pero esencial.
+  </p>
+
+  <ul>
+    <li>🔹 <b>Función específica:</b> diseñados para una tarea concreta dentro de un dispositivo.</li>
+    <li>🔹 <b>Optimización de recursos:</b> aprovechan al máximo memoria, velocidad y energía.</li>
+    <li>🔹 <b>Respuesta en tiempo real:</b> reaccionan de forma rápida y predecible.</li>
+    <li>🔹 <b>Eficiencia energética:</b> bajo consumo para mayor vida útil del dispositivo.</li>
+    <li>🔹 <b>Integración en dispositivos:</b> forman parte de equipos más grandes, invisibles al usuario.</li>
+    <li>🔹 <b>Alta confiabilidad:</b> deben funcionar de forma estable y continua.</li>
+    <li>🔹 <b>Tamaño reducido:</b> compactos y adaptados al aparato donde se integran.</li>
+    <li>🔹 <b>Bajo costo:</b> pensados para fabricarse en masa con bajo presupuesto.</li>
+  </ul>
+
+  <h3>🌍 Ejemplo de la vida real</h3>
+  <p>
+    Un microondas moderno: cuenta con un sistema embebido que controla el temporizador, 
+    la potencia de calentamiento y el panel digital. Todo esto ocurre de manera automática 
+    y sin que el usuario vea el “sistema” que lo hace posible.
+  </p>
+
+  <h3>🎥 Recurso multimedia</h3>
+  <p>Mira este video rápido que explica los fundamentos de los sistemas embebidos:</p>
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/cdQNj4BoXjI"
+    title="Embedded Systems Explained in 3 minutes"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <h3>🔗 Conexiones con otros conceptos</h3>
+  <p>
+    Los sistemas embebidos se relacionan directamente con <b>microcontroladores</b>, 
+    <b>sensores</b> y la <b>conectividad</b>. Juntos forman el núcleo de tecnologías 
+    como el Internet de las Cosas (IoT).
+  </p>
+
+  <h3>❓ Preguntas frecuentes</h3>
+  <p><b>¿Un sistema embebido es lo mismo que una computadora?</b><br>
+  No, una computadora es de propósito general, mientras que un sistema embebido está 
+  diseñado para una tarea específica.</p>
+
+  <p><b>¿Dónde encontramos sistemas embebidos?</b><br>
+  En teléfonos móviles, electrodomésticos, automóviles, dispositivos médicos y más.</p>
+
+  <p><b>¿Qué pasa si falla un sistema embebido?</b><br>
+  Puede afectar el funcionamiento total del dispositivo en el que está integrado.</p>
+
+  <!-- Apartado para comentarios -->
+  <h3>Comentarios</h3>
+  <form id="comentariosFormSistemas">
+    <label for="nombreSistemas">Nombre:</label><br>
+    <input type="text" id="nombreSistemas" name="nombreSistemas" placeholder="Tu nombre" required style="width:100%; margin-bottom:0.5rem;"><br>
+    
+    <label for="comentarioSistemas">Comentario:</label><br>
+    <textarea id="comentarioSistemas" name="comentarioSistemas" rows="4" placeholder="Escribe tu comentario aquí..." required style="width:100%; margin-bottom:0.5rem;"></textarea><br>
+    
+    <button type="submit">Enviar comentario</button>
+  </form>
+  <div id="comentariosListSistemas" style="margin-top:1rem;"></div>
+
+  <div style="text-align:right; margin-top:2rem;">
+    <button onclick="goToSection('plataformas')">Siguiente ➡️</button>
+  </div>
+</section>
+
+<script>
+  // Función para mostrar comentarios sin recargar la página
+  const formSistemas = document.getElementById('comentariosFormSistemas');
+  const listaSistemas = document.getElementById('comentariosListSistemas');
+
+  formSistemas.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombreSistemas').value;
+    const comentario = document.getElementById('comentarioSistemas').value;
+
+    const nuevoComentario = document.createElement('p');
+    nuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+    listaSistemas.appendChild(nuevoComentario);
+
+    formSistemas.reset();
+  });
+</script>
+
+
+<!-- 2. Características de las Plataformas -->
+<section id="plataformas" class="fade-in">
+  <h2>2. Características de las Plataformas</h2>
+  
+  <p>Los sistemas embebidos son como los cerebros ocultos en muchos dispositivos que usamos a diario, desde el coche que nos lleva al trabajo hasta el microondas que calienta nuestra comida o el celular que siempre llevamos en el bolsillo. Combinan <strong>hardware</strong> (partes físicas como circuitos y chips) y <strong>software</strong> (programas que les dan vida) para realizar tareas específicas, como controlar un motor o mostrar la hora en un reloj inteligente. Lo especial de estas plataformas es que están diseñadas para trabajar con recursos limitados, lo que las hace eficientes pero un reto para los ingenieros que las crean.</p>
+
+  <h3>Hardware programable</h3>
+  <p>El hardware programable, como Arduino, permite que los usuarios personalicen el comportamiento del dispositivo escribiendo código que se graba en el chip. Es ideal para proyectos donde necesitas algo único, eficiente y específico.</p>
+  
+  <h4>Ejemplo de vida real</h4>
+  <p>Quieres un sistema para regar tus plantas automáticamente. Conectas un sensor de humedad a un Arduino y una pequeña bomba de agua. Escribes un código sencillo: “si la tierra está seca, enciende la bomba por 5 segundos”. Cada vez que la tierra se seque, se activará sola. Incluso puedes agregar un LED que se encienda cuando riega.</p>
+
+  <h4>Conexiones con otros conceptos</h4>
+  <p>Se relaciona con <strong>programación</strong>, <strong>electrónica</strong>, <strong>automatización</strong> y <strong>ingeniería de sistemas embebidos</strong>.</p>
+
+  <h3>Computadora de una sola placa</h3>
+  <p>Dispositivos como la Raspberry Pi combinan todo lo necesario para funcionar como una computadora en un solo tablero. Tienen procesador, memoria, puertos USB, HDMI y conexión a internet. Son más versátiles que el hardware programable y pueden correr un sistema operativo completo, ideal para tareas más complejas.</p>
+
+  <h4>Ejemplo de vida real</h4>
+  <p>Usas una Raspberry Pi como centro de entretenimiento: conectas un disco duro con películas, un teclado y un monitor. Incluso puedes conectar un Arduino con un sensor de movimiento para que la pantalla se apague automáticamente cuando no hay nadie en la habitación.</p>
+
+  <h4>Conexiones con otros conceptos</h4>
+  <p>Se conecta con <strong>programación</strong>, <strong>electrónica</strong>, <strong>ingeniería de software</strong> y <strong>Internet de las Cosas (IoT)</strong>.</p>
+
+  <h3>Recurso multimedia</h3>
+  <p>Mira este video que explica las diferencias entre Arduino y Raspberry Pi y cómo se usan en sistemas embebidos:</p>
+  <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/XLr80pUsoEA" 
+      title="Arduino vs Raspberry Pi" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+  </iframe>
+
+  <h3>Preguntas frecuentes</h3>
+  <ul>
+    <li><strong>¿Qué diferencia hay entre un Arduino y una Raspberry Pi?</strong> Arduino es hardware programable para tareas específicas; Raspberry Pi es una computadora completa en una sola placa.</li>
+    <li><strong>¿Necesito conocimientos avanzados para usar estas plataformas?</strong> No, pero aprender programación y electrónica ayuda mucho.</li>
+    <li><strong>¿Se pueden combinar?</strong> Sí, como en el ejemplo de la Raspberry Pi con un Arduino y un sensor de movimiento.</li>
+    <li><strong>¿Para qué sirven en la vida real?</strong> Automatizar tareas, crear proyectos educativos, prototipos tecnológicos y dispositivos inteligentes en hogares u oficinas.</li>
+  </ul>
+
+  <!-- Apartado para comentarios -->
+  <h3>Comentarios</h3>
+  <form id="comentariosForm">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required style="width:100%; margin-bottom:0.5rem;"><br>
+    
+    <label for="comentario">Comentario:</label><br>
+    <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu comentario aquí..." required style="width:100%; margin-bottom:0.5rem;"></textarea><br>
+    
+    <button type="submit">Enviar comentario</button>
+  </form>
+  <div id="comentariosList" style="margin-top:1rem;"></div>
+
+  <div style="text-align:right; margin-top:2rem;">
+    <button onclick="goToSection('identificacion')">Siguiente ➡️</button>
+  </div>
+</section>
+
+<script>
+  // Función para mostrar comentarios sin recargar la página
+  const form = document.getElementById('comentariosForm');
+  const lista = document.getElementById('comentariosList');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const comentario = document.getElementById('comentario').value;
+
+    const nuevoComentario = document.createElement('p');
+    nuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+    lista.appendChild(nuevoComentario);
+
+    form.reset();
+  });
+</script>
+
+
+
+<!-- 3. Identificación de Elementos -->
+<section id="identificacion" class="fade-in">
+  <h2>3. Identificación de Elementos</h2>
+  <p>Es el proceso de reconocer y entender los distintos componentes físicos de una plataforma de hardware que se puede programar, como microcontroladores o FPGA, para poder configurarlos y utilizarlos según las necesidades del proyecto.</p>
+  
+  <h3>¿Qué es?</h3>
+  <p>Identificar los elementos de hardware significa conocer cuáles son sus partes, cómo funcionan y cómo se pueden programar para realizar tareas específicas.</p>
+
+  <h3>Ejemplo de vida real</h3>
+  <p>En un teléfono móvil, el procesador, la memoria y los sensores forman parte del hardware programable. Conocer estos elementos permite a los desarrolladores crear aplicaciones que usen la cámara, giroscopio o la memoria para almacenar datos.</p>
+
+  <h3>Características</h3>
+  <ul>
+    <li>Incluye componentes como procesadores, memorias, entradas/salidas y periféricos.</li>
+    <li>Permite ser configurado o programado según el objetivo del usuario.</li>
+    <li>Facilita la personalización de sistemas electrónicos.</li>
+    <li>Su identificación es clave para desarrollar proyectos eficientes y funcionales.</li>
+  </ul>
+
+  <h3>Componentes</h3>
+
+  <h4>CPU (Unidad Central de Procesamiento)</h4>
+  <p><strong>Función:</strong> Ejecuta instrucciones y procesa datos.<br>
+     <strong>Ejemplo:</strong> En un microcontrolador Arduino, la CPU ejecuta el programa que controla luces o sensores.</p>
+  <img src="img/cpu.jpg" alt="CPU" style="width:200px;">
+
+  <h4>RAM (Memoria de Acceso Aleatorio)</h4>
+  <p><strong>Función:</strong> Almacena datos temporales mientras el dispositivo está en funcionamiento.<br>
+     <strong>Ejemplo:</strong> Guarda variables temporales de un programa de control de temperatura.</p>
+ <img src="img/ram.jpeg" alt="RAM" style="width:200px;">
+
+  <h4>ROM / Flash</h4>
+  <p><strong>Función:</strong> Almacena el programa de manera permanente.<br>
+     <strong>Ejemplo:</strong> Código del sistema operativo en un teléfono o firmware de un microcontrolador.</p>
+  <img src="img/rom.jpg" alt="ROM/Flash" style="width:200px;">
+
+  <h4>GPIO (Entradas/Salidas de Propósito General)</h4>
+  <p><strong>Función:</strong> Permite la comunicación con dispositivos externos (sensores, LEDs, motores).<br>
+     <strong>Ejemplo:</strong> Conectar un sensor de movimiento para encender una luz.</p>
+  <img src="img/gpio.png" alt="GPIO" style="width:200px;">
+
+  <h4>Periféricos</h4>
+  <p><strong>Función:</strong> Dispositivos adicionales integrados para funciones específicas.<br>
+     <strong>Ejemplo:</strong> Puertos USB, ADC, DAC, UART.</p>
+ <img src="img/periferico.png" alt="Periféricos" style="width:200px;">
+
+  <h4>Bus de datos</h4>
+  <p><strong>Función:</strong> Canal de comunicación interno entre CPU, memoria y periféricos.<br>
+     <strong>Ejemplo:</strong> Transfiere información del sensor al CPU para procesarla.</p>
+ <img src="img/bus_datos.jpeg" alt="Bus de datos" style="width:200px;">
+
+  <h4>Clock (Reloj)</h4>
+  <p><strong>Función:</strong> Sincroniza todas las operaciones internas del hardware.<br>
+     <strong>Ejemplo:</strong> Define la velocidad a la que el CPU ejecuta instrucciones.</p>
+  <img src="img/clock.jpg" alt="Clock" style="width:200px;">
+
+  <h3>Recurso multimedia</h3>
+  <p>Mira este video que explica los componentes de hardware programable y FPGA:</p>
+  <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/4CEQG6BGNfc" 
+      title="Diseño de hardware con FPGA" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+  </iframe>
+
+  <h3>Conexiones con otros conceptos</h3>
+  <p>Se relaciona con <strong>programación de bajo nivel</strong>, <strong>diseño digital</strong>, <strong>Verilog y VHDL</strong>, <strong>arquitectura de computadoras</strong> y <strong>sistemas embebidos</strong>.</p>
+
+  <h3>Preguntas y Comentarios</h3>
+  <form id="comentariosForm">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required style="width:100%; margin-bottom:0.5rem;"><br>
+    
+    <label for="comentario">Comentario o pregunta:</label><br>
+    <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu comentario aquí..." required style="width:100%; margin-bottom:0.5rem;"></textarea><br>
+    
+    <button type="submit">Enviar comentario</button>
+  </form>
+  <div id="comentariosList" style="margin-top:1rem;"></div>
+
+  <div style="text-align:right; margin-top:2rem;">
+    <button onclick="goToSection('micro')">Siguiente ➡️</button>
+  </div>
+</section>
+
+<script>
+  // Función para mostrar comentarios sin recargar la página
+  const form = document.getElementById('comentariosForm');
+  const lista = document.getElementById('comentariosList');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const comentario = document.getElementById('comentario').value;
+
+    const nuevoComentario = document.createElement('p');
+    nuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+    lista.appendChild(nuevoComentario);
+
+    form.reset();
+  });
+</script>
+
+
+
+<!-- 4. Microcontroladores -->
+<section id="micro" class="fade-in">
+  <h2>4. Microprocesadores y Microcontroladores</h2>
+  
+  <p>Los microprocesadores y microcontroladores son el corazón de muchos sistemas electrónicos. Ambos son unidades de computación, pero difieren en su enfoque y aplicaciones:</p>
+
+  <h3>¿Qué son?</h3>
+  <p><strong>Microprocesador:</strong> Es una unidad central de procesamiento (CPU) que requiere componentes externos como memoria y periféricos para funcionar. Se usa en computadoras y sistemas que necesitan alta capacidad de procesamiento.</p>
+  <p><strong>Microcontrolador:</strong> Es un chip que integra CPU, memoria y periféricos en un solo circuito, diseñado para controlar dispositivos específicos de manera eficiente y con bajo consumo energético.</p>
+
+  <h3>Ejemplos de la vida real</h3>
+  <ul>
+    <li>Microprocesador: La CPU de tu computadora o laptop, que ejecuta múltiples tareas y aplicaciones simultáneamente.</li>
+    <li>Microcontrolador: Un Arduino o PIC controlando un sistema de riego automático o un robot educativo.</li>
+  </ul>
+
+  <h3>Características</h3>
+  <ul>
+    <li>Microprocesador: Alto rendimiento, requiere memoria externa, versátil para sistemas complejos.</li>
+    <li>Microcontrolador: Bajo consumo, integrado, enfocado a tareas específicas, económico y confiable.</li>
+  </ul>
+
+  <h3>Componentes típicos</h3>
+  <ul>
+    <li>CPU (procesador)</li>
+    <li>Memoria RAM y ROM/Flash</li>
+    <li>Periféricos de entrada/salida (GPIO, ADC, UART)</li>
+    <li>Bus de datos y reloj interno</li>
+  </ul>
+
+  <h3>Imágenes ilustrativas</h3>
+
+  <h4>Microprocesador</h4>
+  <img src="img/microprocesador.jpeg" alt="Microprocesador" style="width:300px;">
+  <p>Ejemplo de microprocesador: CPU de computadora. Requiere memoria y periféricos externos para funcionar.</p>
+
+  <h4>Microcontrolador</h4>
+  <img src="img/microcontrolador.jpeg" alt="Microcontrolador" style="width:300px;">
+  <p>Ejemplo de microcontrolador: Arduino o ESP32. Integra CPU, memoria y periféricos en un solo chip.</p>
+
+  <h4>Comparativa</h4>
+<img src="img/comparacion.png" alt="Comparación Microprocesador vs Microcontrolador" style="width:400px;">
+<p>Infografía que muestra la diferencia entre microprocesador y microcontrolador.</p>
+
+
+  <h3>Recurso multimedia</h3>
+  <p>Mira este video que explica las diferencias entre microprocesadores y microcontroladores:</p>
+  <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/xRuPimvf4LQ" 
+      title="Diferencia entre microprocesador y microcontrolador" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+  </iframe>
+
+  <h3>Conexiones con otros conceptos</h3>
+  <p>Se relaciona con <strong>hardware programable</strong>, <strong>sistemas embebidos</strong>, <strong>automatización</strong>, <strong>Internet de las Cosas (IoT)</strong> y <strong>diseño de circuitos</strong>.</p>
+
+  <h3>Preguntas y Comentarios</h3>
+  <form id="comentariosFormMicro">
+    <label for="nombreMicro">Nombre:</label><br>
+    <input type="text" id="nombreMicro" name="nombreMicro" placeholder="Tu nombre" required style="width:100%; margin-bottom:0.5rem;"><br>
+    
+    <label for="comentarioMicro">Comentario o pregunta:</label><br>
+    <textarea id="comentarioMicro" name="comentarioMicro" rows="4" placeholder="Escribe tu comentario aquí..." required style="width:100%; margin-bottom:0.5rem;"></textarea><br>
+    
+    <button type="submit">Enviar comentario</button>
+  </form>
+  <div id="comentariosListMicro" style="margin-top:1rem;"></div>
+
+  <div style="text-align:right; margin-top:2rem;">
+    <button onclick="goToSection('siguiente')">Siguiente ➡️</button>
+  </div>
+</section>
+
+<script>
+  // Función para mostrar comentarios de micro sin recargar la página
+  const formMicro = document.getElementById('comentariosFormMicro');
+  const listaMicro = document.getElementById('comentariosListMicro');
+
+  formMicro.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombreMicro').value;
+    const comentario = document.getElementById('comentarioMicro').value;
+
+    const nuevoComentario = document.createElement('p');
+    nuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+    listaMicro.appendChild(nuevoComentario);
+
+    formMicro.reset();
+  });
+</script>
+
+
+
+<!-- 5. Sensores -->
+<section id="sensores" class="fade-in">
+  <h2>5. Sensores</h2>
+  
+  <p>Los sensores son dispositivos que detectan cambios en el entorno y convierten esa información en señales eléctricas que los sistemas electrónicos pueden interpretar. Son esenciales en sistemas embebidos y automatización, ya que permiten interactuar con el mundo real.</p>
+
+  <h3>¿Qué son?</h3>
+  <p>Un sensor es un dispositivo capaz de medir magnitudes físicas, químicas o biológicas, y convertirlas en señales eléctricas para ser procesadas por un sistema.</p>
+
+  <h3>Ejemplos de vida real</h3>
+  <ul>
+    <li>Sensor de temperatura en un termostato que regula la calefacción de una casa.</li>
+    <li>Sensor de proximidad en un teléfono móvil para apagar la pantalla durante una llamada.</li>
+    <li>Sensor de humedad en un sistema de riego automático que detecta la sequedad de la tierra.</li>
+  </ul>
+
+  <h3>Tipos de sensores</h3>
+  <table border="1" style="width:100%; border-collapse:collapse;">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Función</th>
+        <th>Ejemplo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Temperatura</td><td>Mide calor o frío</td><td>Termostato AC</td></tr>
+      <tr><td>Luz</td><td>Detecta luminosidad</td><td>Brillo automático celular</td></tr>
+      <tr><td>Movimiento</td><td>Detecta posición</td><td>Luces automáticas</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Recurso multimedia</h3>
+  <p>Mira este video que explica cómo funcionan los sensores y su importancia en sistemas embebidos:</p>
+  <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/CsVRaOAsCyY" 
+      title="Introducción a los Sistemas Embebidos" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+  </iframe>
+
+  <h3>Conexiones con otros conceptos</h3>
+  <p>Se relaciona con <strong>programación de sensores</strong>, <strong>electrónica</strong>, <strong>automatización</strong> y <strong>Internet de las Cosas (IoT)</strong>.</p>
+
+  <h3>Preguntas y Comentarios</h3>
+  <form id="comentariosFormSensores">
+    <label for="nombreSensores">Nombre:</label><br>
+    <input type="text" id="nombreSensores" name="nombreSensores" placeholder="Tu nombre" required style="width:100%; margin-bottom:0.5rem;"><br>
+    
+    <label for="comentarioSensores">Comentario o pregunta:</label><br>
+    <textarea id="comentarioSensores" name="comentarioSensores" rows="4" placeholder="Escribe tu comentario aquí..." required style="width:100%; margin-bottom:0.5rem;"></textarea><br>
+    
+    <button type="submit">Enviar comentario</button>
+  </form>
+  <div id="comentariosListSensores" style="margin-top:1rem;"></div>
+
+  <div style="text-align:right; margin-top:2rem;">
+    <button onclick="goToSection('conceptos')">Siguiente ➡️</button>
+  </div>
+</section>
+
+<script>
+  // Función para mostrar comentarios de sensores sin recargar la página
+  const formSensores = document.getElementById('comentariosFormSensores');
+  const listaSensores = document.getElementById('comentariosListSensores');
+
+  formSensores.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombreSensores').value;
+    const comentario = document.getElementById('comentarioSensores').value;
+
+    const nuevoComentario = document.createElement('p');
+    nuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+    listaSensores.appendChild(nuevoComentario);
+
+    formSensores.reset();
+  });
+</script>
+
+
+<!-- 6. Conceptos -->
+<section id="conceptos" class="fade-in">
+  <h2>6. Conceptos Clave en Plataformas Embebidas</h2>
+
+  <p>Las plataformas embebidas son sistemas informáticos diseñados para tareas específicas, con un enfoque en la eficiencia y la interacción con el mundo real. La conectividad, la telemetría y los sistemas de tiempo real son conceptos fundamentales en este ámbito.</p>
+
+  <h3>6.1 Conectividad en Plataformas Embebidas</h3>
+  <p>La conectividad permite la comunicación entre dispositivos y redes, esencial para la interacción con sensores, otros dispositivos y la nube.</p>
+
+  <h4>Wi-Fi y Bluetooth</h4>
+  <p>Microcontroladores como el ESP32 integran Wi-Fi y Bluetooth, facilitando la comunicación con otros dispositivos y redes.</p>
+
+  <h4>Conexión Serie y UART</h4>
+  <p>La comunicación UART se utiliza para conectar microcontroladores con módulos periféricos como pantallas, GPS o sensores.</p>
+
+  <h4>Ejemplo de Conectividad: ESP32</h4>
+  <ul>
+    <li><strong>Sensor:</strong> Captura datos de temperatura y humedad.</li>
+    <li><strong>ESP32:</strong> Procesa los datos y se conecta a la red Wi-Fi.</li>
+    <li><strong>Aplicación Móvil:</strong> Recibe datos del ESP32 y los muestra al usuario.</li>
+  </ul>
+
+  <h3>6.2 Telemetría en Plataformas Embebidas</h3>
+  <p>La telemetría permite la transmisión de datos a un sistema remoto para su monitoreo y análisis. Se utiliza para enviar información como ubicación, temperatura o nivel de batería.</p>
+
+  <ol>
+    <li><strong>Monitoreo Remoto:</strong> Supervisión de sistemas sin intervención humana.</li>
+    <li><strong>Análisis de Datos:</strong> Permite obtener información valiosa de los datos recopilados.</li>
+    <li><strong>Toma de Decisiones:</strong> Facilita decisiones informadas sobre el sistema.</li>
+  </ol>
+
+  <h4>Ejemplo de Telemetría: Drone</h4>
+  <ul>
+    <li><strong>Sensor de Altitud:</strong> Mide la altura del drone.</li>
+    <li><strong>GPS:</strong> Determina la ubicación del drone.</li>
+    <li><strong>Transmisor:</strong> Envía datos a la estación de control.</li>
+    <li><strong>Estación de Control:</strong> Recibe datos y muestra la posición y altitud del drone.</li>
+  </ul>
+
+  <h3>6.3 Sistemas de Tiempo Real (RTS)</h3>
+  <p>Un sistema de tiempo real debe responder a eventos dentro de un plazo determinado. La precisión temporal es fundamental, y los resultados deben entregarse dentro de un margen específico.</p>
+
+  <h4>Ejemplo: Airbag</h4>
+  <p>El sistema de control de un airbag detecta una colisión y despliega el airbag en milisegundos.</p>
+
+  <h4>Ejemplo: Control Industrial</h4>
+  <p>Los sistemas de control industrial responden rápidamente a cambios en las condiciones de operación para mantener la seguridad y eficiencia.</p>
+
+  <h3>Recurso Multimedia</h3>
+  <p>Mira este video que explica cómo funcionan las plataformas embebidas:</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CsVRaOAsCyY" title="Introducción a los Sistemas Embebidos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <h3>Imagen Representativa</h3>
+  <img src="img/dron.png" alt="Sistema de Drone" style="width:100%; height:auto; border-radius:8px;">
+
+  <h3>Preguntas y Comentarios</h3>
+  <form id="comentariosFormConceptos">
+    <label for="nombreConceptos">Nombre:</label><br>
+    <input type="text" id="nombreConceptos" name="nombreConceptos" placeholder="Tu nombre" required style="width:100%; margin-bottom:0.5rem;"><br>
+    
+    <label for="comentarioConceptos">Comentario o pregunta:</label><br>
+    <textarea id="comentarioConceptos" name="comentarioConceptos" rows="4" placeholder="Escribe tu comentario aquí..." required style="width:100%; margin-bottom:0.5rem;"></textarea><br>
+    
+    <button type="submit">Enviar comentario</button>
+  </form>
+  <div id="comentariosListConceptos" style="margin-top:1rem;"></div>
+
+  <div style="text-align:right; margin-top:2rem;">
+    <button onclick="goToSection('siguiente')">Siguiente ➡️</button>
+  </div>
+</section>
+
+<script>
+  // Función para mostrar comentarios de Conceptos sin recargar la página
+  const formConceptos = document.getElementById('comentariosFormConceptos');
+  const listaConceptos = document.getElementById('comentariosListConceptos');
+
+  formConceptos.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombreConceptos').value;
+    const comentario = document.getElementById('comentarioConceptos').value;
+
+    const nuevoComentario = document.createElement('p');
+    nuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+    listaConceptos.appendChild(nuevoComentario);
+
+    formConceptos.reset();
+  });
+</script>
+
+
+<!-- 7. Conectividad -->
+<section id="conectividad" class="fade-in">
+  <h2>7. Tipos de Conectividad en Plataformas Embebidas</h2>
+
+  <h3>7.1 Conectividad en Hardware Programable</h3>
+  <p>Los hardware programables como FPGA o microcontroladores tienen capacidades limitadas de conectividad integradas, pero pueden expandirse con módulos adicionales.</p>
+
+  <h4>Wi-Fi y Bluetooth</h4>
+  <p>Los microcontroladores como el ESP32 integran Wi-Fi y Bluetooth.</p>
+  <img src="img/placa_bluetooth.jpg" alt="Placa Bluetooth" style="width:200px; margin-bottom:1rem;">
+
+  <h4>Conexión Serie y UART</h4>
+  <p>La comunicación UART se utiliza para conectar microcontroladores con módulos periféricos.</p>
+  <img src="img/modulo_comunicacion.png" alt="Módulo de Comunicación" style="width:200px; margin-bottom:1rem;">
+
+  <h3>7.2 Conectividad en Computadoras de Una Sola Placa (SBC)</h3>
+  <p>Las SBC como la Raspberry Pi ofrecen más opciones de conectividad gracias a su arquitectura más avanzada y versátil.</p>
+  <ul>
+    <li>Wi-Fi</li>
+    <li>Bluetooth</li>
+    <li>Ethernet</li>
+    <li>USB</li>
+    <li>HDMI</li>
+    <li>GPIO</li>
+    <li>SPI</li>
+  </ul>
+  <img src="img/raspberry.jpg" alt="Raspberry Pi" style="width:200px; margin-bottom:1rem;">
+  <img src="img/sistema_iot.png" alt="Sistema IoT" style="width:200px; margin-bottom:1rem;">
+  <img src="img/spi.png" alt="Conexión SPI" style="width:200px; margin-bottom:1rem;">
+
+  <h3>Recurso Multimedia</h3>
+  <p>Mira este video que explica los tipos de conectividad en plataformas embebidas:</p>
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/8n1NdLWk8GY"
+    title="SISTEMAS EMBEBIDOS: Concepto, características y aplicaciones"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+
+  <h3>Preguntas y Comentarios</h3>
+  <form id="comentariosFormConectividad">
+    <label for="nombreConectividad">Nombre:</label><br>
+    <input type="text" id="nombreConectividad" name="nombreConectividad" placeholder="Tu nombre" required style="width:100%; margin-bottom:0.5rem;"><br>
+
+    <label for="comentarioConectividad">Comentario o pregunta:</label><br>
+    <textarea id="comentarioConectividad" name="comentarioConectividad" rows="4" placeholder="Escribe tu comentario aquí..." required style="width:100%; margin-bottom:0.5rem;"></textarea><br>
+
+    <button type="submit">Enviar comentario</button>
+  </form>
+  <div id="comentariosListConectividad" style="margin-top:1rem;"></div>
+
+  <div style="text-align:right; margin-top:2rem;">
+    <button onclick="goToSection('siguiente')">Siguiente ➡️</button>
+  </div>
+</section>
+
+<script>
+  const formConectividad = document.getElementById('comentariosFormConectividad');
+  const listaConectividad = document.getElementById('comentariosListConectividad');
+
+  formConectividad.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombreConectividad').value;
+    const comentario = document.getElementById('comentarioConectividad').value;
+
+    const nuevoComentario = document.createElement('p');
+    nuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+    listaConectividad.appendChild(nuevoComentario);
+
+    formConectividad.reset();
+  });
+</script>
+
+
+<!-- 8. Proceso de Transmisión -->
+<section id="transmision" class="fade-in">
+  <h2>8. Proceso de Transmisión de Datos en Sistemas Embebidos</h2>
+
+  <p>La transmisión de datos en sistemas embebidos se refiere al flujo de información entre el sistema y otros dispositivos o redes. Implica convertir los datos en señales electrónicas que pueden transmitirse por cables, Wi-Fi, Bluetooth o radiofrecuencia.</p>
+
+  <h3>Pasos del Proceso de Transmisión de Datos</h3>
+  <ol>
+    <li><strong>Adquisición de Datos:</strong> Los sensores capturan información del entorno (temperatura, presión, movimiento) y el sistema embebido la convierte en señales eléctricas.</li>
+    <li><strong>Procesamiento de Datos:</strong> Los datos se procesan, filtrando ruido, convirtiendo señales analógicas a digitales (ADC) o comprimiéndolos para optimizar la transmisión.</li>
+    <li><strong>Codificación de Datos:</strong> Se elige un protocolo (UART, SPI, I2C) y se empaquetan los datos en tramas con bits de inicio, datos y verificación.</li>
+    <li><strong>Transmisión de Datos:</strong> Los datos codificados se envían a través del medio físico (cable, ondas de radio, etc.) hacia su destino.</li>
+    <li><strong>Recepción y Decodificación:</strong> El receptor verifica errores y procesa o almacena los datos recibidos.</li>
+  </ol>
+
+  <h3>Ejemplos Prácticos</h3>
+  <ul>
+    <li><strong>Sensor de Temperatura:</strong> Un DHT11 envía temperatura al microcontrolador.</li>
+    <li><strong>Arduino Uno:</strong> Procesa los datos del sensor y decide activar un ventilador.</li>
+    <li><strong>Sistema Embebido en Fábrica:</strong> Usa Ethernet para enviar datos de producción a un servidor.</li>
+    <li><strong>Monitoreo Ambiental:</strong> Sensores con Zigbee envían datos de temperatura y humedad a una estación central.</li>
+  </ul>
+
+  <h3>Mecanismos de Transmisión de Datos</h3>
+  <h4>Transmisión por Cable</h4>
+  <ul>
+    <li><strong>Serial (UART, SPI, I2C):</strong> Comunicación con dispositivos periféricos y sensores.</li>
+    <li><strong>USB:</strong> Transmisión rápida para sistemas embebidos con gran volumen de datos.</li>
+    <li><strong>Ethernet:</strong> Comunicación en red confiable y de alta velocidad.</li>
+  </ul>
+
+  <h4>Transmisión Inalámbrica</h4>
+  <ul>
+    <li><strong>Wi-Fi:</strong> Ideal para IoT y conexión a la nube.</li>
+    <li><strong>Bluetooth:</strong> Comunicación de corto alcance.</li>
+    <li><strong>Zigbee:</strong> Bajo consumo y para redes distribuidas de sensores.</li>
+  </ul>
+
+  <h4>Transmisión por Radiofrecuencia</h4>
+  <ul>
+    <li><strong>RF:</strong> Comunicación inalámbrica de largo alcance, usado en telemetría y redes remotas.</li>
+  </ul>
+
+  <h3>Características del Protocolo de Transmisión</h3>
+  <ul>
+    <li><strong>Velocidad de Transmisión:</strong> Determina la rapidez de envío/recepción de datos.</li>
+    <li><strong>Seguridad y Encriptación:</strong> Protege los datos frente a interceptaciones.</li>
+    <li><strong>Corrección de Errores:</strong> Detecta y corrige errores durante la transmisión.</li>
+    <li><strong>Latencia:</strong> Tiempo que tarda la información en viajar del origen al destino, crítico en sistemas de tiempo real.</li>
+  </ul>
+
+  <h3>Ejemplos de Aplicación</h3>
+  <ul>
+    <li><strong>Cámaras de Vigilancia:</strong> Ethernet para transmitir grandes volúmenes de datos.</li>
+    <li><strong>Sistemas de Alarma Doméstica:</strong> Wi-Fi con encriptación para privacidad.</li>
+    <li><strong>Control de Tráfico Aéreo:</strong> Latencia mínima crítica para evitar colisiones.</li>
+    <li><strong>Dispositivos IoT:</strong> Wi-Fi para monitoreo remoto en tiempo real.</li>
+  </ul>
+
+  <h3>Recurso Multimedia</h3>
+<p>Haz clic en el siguiente enlace para ver un video sobre los tipos de conectividad en plataformas embebidas:</p>
+<a href="https://www.youtube.com/watch?v=9HebRM_qLxs" target="_blank" style="color:blue; text-decoration:underline;">
+Ver video en YouTube
+</a>
+
+
+
+
+
+  <h3>Preguntas y Comentarios</h3>
+  <form id="comentariosFormTransmision">
+    <label for="nombreTransmision">Nombre:</label><br>
+    <input type="text" id="nombreTransmision" name="nombreTransmision" placeholder="Tu nombre" required style="width:100%; margin-bottom:0.5rem;"><br>
+    
+    <label for="comentarioTransmision">Comentario o pregunta:</label><br>
+    <textarea id="comentarioTransmision" name="comentarioTransmision" rows="4" placeholder="Escribe tu comentario aquí..." required style="width:100%; margin-bottom:0.5rem;"></textarea><br>
+    
+    <button type="submit">Enviar comentario</button>
+  </form>
+  <div id="comentariosListTransmision" style="margin-top:1rem;"></div>
+
+  <div style="text-align:right; margin-top:2rem;">
+    <button onclick="goToSection('siguiente')">Siguiente ➡️</button>
+  </div>
+</section>
+
+<script>
+  const formTransmision = document.getElementById('comentariosFormTransmision');
+  const listaTransmision = document.getElementById('comentariosListTransmision');
+
+  formTransmision.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombreTransmision').value;
+    const comentario = document.getElementById('comentarioTransmision').value;
+
+    const nuevoComentario = document.createElement('p');
+    nuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+    listaTransmision.appendChild(nuevoComentario);
+
+    formTransmision.reset();
+  });
+</script>
+
+<!-- 9. Gestión de Datos -->
+<!-- 9. Gestión de Datos -->
+<!-- 9. Gestión de Datos -->
+<section id="gestion" class="fade-in">
+  <h2>9. Gestión de Datos en Sistemas Embebidos</h2>
+
+  <p>La gestión de datos implica recopilar, almacenar, procesar y transmitir la información capturada por los sensores y sistemas embebidos. Es fundamental para tomar decisiones automatizadas o enviar información a sistemas externos.</p>
+
+  <h3>Pasos de la Gestión de Datos</h3>
+  <ol>
+    <li><strong>Recolección:</strong> Los sensores capturan datos del entorno.</li>
+    <li><strong>Procesamiento:</strong> Los datos se filtran, analizan y formatean.</li>
+    <li><strong>Almacenamiento:</strong> Se guardan temporal o permanentemente en memoria interna, tarjetas SD o bases de datos.</li>
+    <li><strong>Transmisión:</strong> Se envían a la nube o a otros sistemas para su monitoreo o análisis.</li>
+    <li><strong>Visualización:</strong> Se muestran en pantallas, aplicaciones o dashboards para el usuario.</li>
+  </ol>
+
+  <h3>Ejemplo de Vida Real</h3>
+  <p>En un sistema de riego automatizado: los sensores de humedad recolectan datos, el microcontrolador decide cuándo regar, guarda registros en memoria y envía información a una app para monitoreo remoto.</p>
+
+  <h3>Recurso Multimedia</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-AGA5mtpnMI" title="Los habilitadores digitales de la Industria 4.0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <h3>Preguntas y Comentarios</h3>
+  <form id="comentariosFormGestion">
+    <label for="nombreGestion">Nombre:</label><br>
+    <input type="text" id="nombreGestion" name="nombreGestion" placeholder="Tu nombre" required style="width:100%; margin-bottom:0.5rem;"><br>
+    
+    <label for="comentarioGestion">Comentario o pregunta:</label><br>
+    <textarea id="comentarioGestion" name="comentarioGestion" rows="4" placeholder="Escribe tu comentario aquí..." required style="width:100%; margin-bottom:0.5rem;"></textarea><br>
+    
+    <button type="submit">Enviar comentario</button>
+  </form>
+  <div id="comentariosListGestion" style="margin-top:1rem;"></div>
+
+  <div style="text-align:right; margin-top:2rem;">
+    <button onclick="goToSection('inicio')">🏠 Inicio</button>
+  </div>
+</section>
+
+<script>
+  // Mostrar comentarios de gestión sin recargar la página
+  const formGestion = document.getElementById('comentariosFormGestion');
+  const listaGestion = document.getElementById('comentariosListGestion');
+
+  formGestion.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombreGestion').value;
+    const comentario = document.getElementById('comentarioGestion').value;
+
+    const nuevoComentario = document.createElement('p');
+    nuevoComentario.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+    listaGestion.appendChild(nuevoComentario);
+
+    formGestion.reset();
+  });
+</script>
+
+
+<footer>
+<p>Designed with 💻 by Axel Rangel - 2025</p>
+</footer>
+
+<script>
+const links = document.querySelectorAll('nav a');
+const sections = document.querySelectorAll('section');
+
+links.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = e.target.dataset.target;
+        goToSection(target);
+    });
+});
+
+function goToSection(targetId){
+    sections.forEach(sec => {
+        sec.classList.remove('active','fade-in');
+        if(sec.id===targetId) sec.classList.add('active','fade-in');
+    });
+    window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
